@@ -1,6 +1,9 @@
 let score=1
 let tree=document.getElementById('tree')
 let deer=document.getElementsByClassName('deer')
+let modal = document.getElementById("myModal");
+let span = document.getElementsByClassName("close")[0];
+
 
 document.addEventListener('DOMContentLoaded', function() {
     const bottles = document.querySelectorAll('.bottle');
@@ -59,6 +62,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 else {
                     deer[0].style.display = 'flex'
                     deer[1].style.display = 'flex'
+                    modal.style.display = "block";
                 }
                 bin.style.height = '18%';
                 bin.style.width = '15'
@@ -76,3 +80,14 @@ document.addEventListener('DOMContentLoaded', function() {
             rect1.top > rect2.bottom);
     }
 });
+
+
+// for closing the modal
+span.onclick = function() {
+    modal.style.display = "none";
+}
+window.onclick = function(event) {
+    if (event.target === modal) {
+        modal.style.display = "none";
+    }
+}
