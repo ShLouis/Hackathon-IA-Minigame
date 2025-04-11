@@ -1,0 +1,131 @@
+body{
+    width:100dvw;
+    height:100dvh;
+    margin:0;
+    overflow: hidden;
+}
+
+.game{
+    width:100dvw;
+    height:100dvh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url("public/images/background.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #ace6e6;
+}
+
+.draggable{}
+
+.bin{
+    background-image: url("public/images/bin.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    height:18%;
+    width:15%;
+    bottom: 4%;
+    left: 30%;
+    position:absolute;
+    z-index: 1;
+}
+
+.bottle{
+    height: 15%;
+    width:12%;
+    z-index: 3;
+}
+
+#bottle1{
+    background-image: url("public/images/bottle1.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    position:absolute;
+    right: 5%;
+    bottom: 0.01%;
+}
+#bottle2{
+    background-image: url("public/images/bottle2.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    position:absolute;
+    left: 10%;
+    bottom: 1%;
+}
+
+#bottle3{
+    background-image: url("public/images/bottle3.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    position:absolute;
+    bottom: 3%;
+}
+
+#bag1{
+    background-image: url("public/images/bag1.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    position:absolute;
+    bottom: 3%;
+    left: 20%;
+}
+#bag2{
+    background-image: url("public/images/bag2.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    position:absolute;
+    bottom: 3%;
+    right: 40%;
+}
+
+.draggable {
+    width: 100px;
+    height: 100px;
+    text-align: center;
+    line-height: 100px;
+    position: absolute;
+    cursor: grab;
+    user-select: none;
+}
+
+.tree{
+    background-image: url("public/images/tree-stage1.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    position:absolute;
+    width: 50%;
+    height: 50%;
+    z-index: 2;
+    right: 4%;
+    bottom: 4.5%;
+}
+
+#deer1{
+    background-image: url("public/images/deer.png");
+    display: none;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    position:absolute;
+    width: 30%;
+    height: 30%;
+    z-index: 2;
+    right: -1%;
+    bottom: 4.5%;
+}
+
+#deer2{
+    background-image: url("public/images/deer2.png");
+    display: none;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    position:absolute;
+    width: 30%;
+    height: 30%;
+    z-index: 2;
+    left: 40%;
+    bottom: 4.5%;
+}
